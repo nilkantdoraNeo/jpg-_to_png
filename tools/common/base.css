@@ -1,0 +1,88 @@
+:root {
+  --brand-start: #0066ff;
+  --brand-end: #33aaff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --surface: #ffffff;
+  --line: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.drop-zone {
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.drop-zone.drag-over {
+  border-color: var(--brand-start) !important;
+  background: #eff6ff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 102, 255, 0.12);
+}
+
+.btn-primary {
+  background-image: linear-gradient(135deg, var(--brand-start), var(--brand-end));
+}
+
+.preview-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.preview-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+.tool-shell {
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.ad-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+input[type="range"] {
+  accent-color: #0066ff;
+}
+
+.crop-stage {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.crop-stage img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.crop-selection {
+  position: absolute;
+  border: 2px solid #0066ff;
+  background: rgba(51, 170, 255, 0.2);
+  display: none;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}

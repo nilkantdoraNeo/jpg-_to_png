@@ -3,304 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free JPG to PNG Converter Online | Fast JPEG to PNG Tool</title>
+  <title>Image Tools Hub - Free Online Converters, Compressor, Resizer, Cropper, PDF</title>
   <meta
     name="description"
-    content="Convert JPG to PNG instantly with this free JPG to PNG converter. Fast JPEG to PNG conversion, no server upload, secure and 100% browser based."
+    content="Free image tools website with JPG to PNG, PNG to JPG, WebP converters, image compressor, resizer, cropper, and image to PDF. 100% client-side processing."
   />
   <meta
     name="keywords"
-    content="jpg to png converter,jpeg to png converter,jpg converter,free image converter online,convert jpg to png,jpg contertor"
+    content="jpg to png,png to jpg,jpg to webp,png to webp,webp to jpg,webp to png,image compressor,image resizer,image cropper,image to pdf"
   />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0066ff" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Free JPG to PNG Converter Online" />
-  <meta
-    property="og:description"
-    content="Free JPG to PNG converter that runs fully in your browser. Convert JPEG to PNG quickly without uploading files to a server."
-  />
+  <meta property="og:title" content="Image Tools Hub - Free Online Image Utilities" />
+  <meta property="og:description" content="Use 10 free image tools: convert, compress, resize, crop, and create PDF files directly in your browser." />
   <meta property="og:url" content="https://your-domain.com/" />
-  <meta property="og:image" content="https://your-domain.com/assets/logo.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Free JPG to PNG Converter Online" />
-  <meta
-    name="twitter:description"
-    content="Convert JPG and JPEG images to PNG instantly. Fast, free, secure, and 100% client-side."
-  />
-  <meta name="twitter:image" content="https://your-domain.com/assets/logo.svg" />
   <link rel="canonical" href="https://your-domain.com/" />
   <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           boxShadow: {
-            card: "0 18px 40px rgba(15, 23, 42, 0.08)"
+            card: "0 22px 44px rgba(15, 23, 42, 0.08)"
           }
         }
       }
     };
   </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "JPG to PNG Converter",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "Any",
-      "browserRequirements": "Requires HTML5 and JavaScript",
-      "url": "https://your-domain.com/",
-      "description": "Free online JPG to PNG converter that processes images locally in your browser without uploading to any server.",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "featureList": [
-        "JPG to PNG conversion",
-        "Drag and drop upload",
-        "Multiple file support",
-        "Client-side processing",
-        "No account required"
-      ]
-    }
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I convert JPG to PNG?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Upload one or more JPG or JPEG files, click Convert to PNG, then download your new PNG files instantly."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is this JPG to PNG converter free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. This tool is free to use with no sign-up and no server upload."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is this tool secure for private images?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Image conversion happens in your browser with the Canvas API, so your files stay on your device."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "I searched for jpg contertor. Is this the same tool?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. If you mean a JPG converter to turn JPG into PNG, this tool does exactly that."
-          }
-        }
-      ]
-    }
-  </script>
+  <link rel="stylesheet" href="./tools/common/base.css" />
 </head>
-<body class="min-h-screen bg-[radial-gradient(circle_at_top,#e6f2ff_0%,#f8fbff_30%,#f8fafc_100%)] text-slate-800 antialiased">
-  <div class="mx-auto flex min-h-screen max-w-[1400px] flex-col px-4 sm:px-6 lg:px-8">
-    <header class="pt-6 sm:pt-8">
-      <div class="rounded-[20px] border border-slate-100 bg-white/95 p-4 shadow-card backdrop-blur sm:p-6">
-        <div class="flex flex-wrap items-center justify-between gap-4">
-          <a href="/" class="inline-flex items-center">
-            <img src="./assets/logo.svg" alt="JPG to PNG Converter logo" class="h-10 w-auto sm:h-12" />
-          </a>
-          <div class="flex flex-wrap items-center gap-3">
-            <p class="rounded-full border border-blue-100 bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#0066ff]">
-              Free Forever
-            </p>
-            <p class="rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-700">
-              No Ads
-            </p>
-          </div>
+<body class="min-h-screen bg-[radial-gradient(circle_at_top,#dbeafe_0%,#eff6ff_24%,#f8fafc_100%)] text-slate-800 antialiased">
+  <div class="mx-auto max-w-[1280px] px-4 py-6 sm:px-6 lg:px-8">
+    <header class="tool-shell rounded-[24px] border border-slate-100 bg-white/95 p-5 backdrop-blur sm:p-7">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#0066ff]">Free Client-Side Suite</p>
+          <h1 class="mt-2 text-3xl font-extrabold text-slate-900 sm:text-4xl">Image Tools Website</h1>
+          <p class="mt-2 max-w-2xl text-sm leading-7 text-slate-600">
+            Convert, compress, resize, crop, and generate PDFs with fast browser-based tools. No file uploads to a server.
+          </p>
         </div>
-        <nav class="mt-4 flex flex-wrap gap-3 text-sm font-medium text-slate-600">
-          <a href="#converter" class="rounded-full border border-slate-200 px-3 py-1 transition hover:border-[#0066ff] hover:text-[#0066ff]">Converter</a>
-          <a href="#how-to-use" class="rounded-full border border-slate-200 px-3 py-1 transition hover:border-[#0066ff] hover:text-[#0066ff]">How To Use</a>
-          <a href="#faq" class="rounded-full border border-slate-200 px-3 py-1 transition hover:border-[#0066ff] hover:text-[#0066ff]">FAQ</a>
-        </nav>
+        <img src="./assets/logo.svg" alt="Image Tools logo" class="h-10 w-auto sm:h-12" />
       </div>
 
       <!-- AdSense 728x90 -->
-      <!-- Free version: ad placeholder disabled
-      <div class="mx-auto mt-5 flex h-[90px] w-full max-w-[728px] items-center justify-center rounded-[20px] border-2 border-dashed border-slate-300 bg-white shadow-card">
-        <div class="text-center">
+      <div class="ad-box mx-auto mt-6 flex h-[90px] w-full max-w-[728px] items-center justify-center text-center">
+        <div>
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Ad Placeholder</p>
           <p class="text-sm font-semibold text-slate-600">728 x 90</p>
         </div>
       </div>
-      -->
     </header>
 
-    <main class="flex-1 py-6 sm:py-8">
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_360px]">
-        <section id="converter" class="rounded-[20px] border border-slate-100 bg-white p-5 shadow-card sm:p-8">
-          <div class="flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <h1 class="text-2xl font-bold text-slate-900 sm:text-3xl">JPG to PNG Converter</h1>
-              <p class="mt-1 text-sm text-slate-500">Upload JPG or JPEG files and convert them to high-quality PNG images in seconds.</p>
-            </div>
-          </div>
-
-          <div
-            id="dropZone"
-            class="mt-6 cursor-pointer rounded-[20px] border-2 border-dashed border-slate-300 bg-slate-50/80 p-8 text-center transition-all duration-300 hover:border-[#0066ff] hover:bg-blue-50 sm:p-12"
-            tabindex="0"
-            role="button"
-            aria-label="Upload JPG files"
-          >
-            <div class="mx-auto flex max-w-xl flex-col items-center">
-              <img src="./assets/icons/upload.svg" alt="Upload icon" class="h-12 w-12" />
-              <h2 class="mt-4 text-xl font-semibold text-slate-900">Drag and Drop JPG Files Here</h2>
-              <p class="mt-2 text-sm text-slate-500">or click anywhere inside this box to upload from your device</p>
-              <p class="mt-4 rounded-full bg-gradient-to-r from-[#0066ff] to-[#33aaff] px-5 py-2 text-sm font-semibold text-white shadow-md">
-                Select JPG/JPEG Files
-              </p>
-            </div>
-            <input id="fileInput" type="file" accept=".jpg,.jpeg,image/jpeg" multiple class="hidden" />
-          </div>
-
-          <div class="mt-5 flex flex-wrap gap-3">
-            <button
-              id="convertBtn"
-              type="button"
-              class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[#0066ff] to-[#33aaff] px-5 py-3 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:scale-[1.02] hover:shadow-lg"
-            >
-              <span id="convertButtonText">Convert to PNG</span>
-            </button>
-            <button
-              id="downloadBtn"
-              type="button"
-              class="inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-semibold text-[#0066ff] shadow-sm transition-all duration-200 hover:scale-[1.02] hover:border-blue-400 hover:shadow-md"
-            >
-              <img src="./assets/icons/download.svg" alt="Download icon" class="h-4 w-4" />
-              <span>Download PNG</span>
-            </button>
-            <button
-              id="clearBtn"
-              type="button"
-              class="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-600 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:border-slate-300 hover:shadow-md"
-            >
-              <img src="./assets/icons/clear.svg" alt="Clear files icon" class="h-4 w-4" />
-              <span>Clear Files</span>
-            </button>
-          </div>
-
-          <div id="statusMessage" aria-live="polite" class="mt-4 hidden rounded-2xl border px-4 py-3 text-sm font-medium"></div>
-
-          <div class="mt-7">
-            <div class="flex items-center justify-between gap-3">
-              <h3 class="text-lg font-semibold text-slate-900">Image Previews</h3>
-              <p id="fileCount" class="text-sm text-slate-500">0 files selected</p>
-            </div>
-            <div id="previewGrid" class="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              <div class="col-span-full rounded-[20px] border-2 border-dashed border-slate-200 bg-slate-50 p-8 text-center text-slate-500">
-                JPG previews will appear here.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <aside class="rounded-[20px] border border-slate-100 bg-white p-5 shadow-card sm:p-6">
-          <h2 class="text-lg font-semibold text-slate-900">How To Use</h2>
-          <ol class="mt-4 space-y-3 text-sm text-slate-600">
-            <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">1.</span> Upload one or more JPG/JPEG files.</li>
-            <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">2.</span> Click <span class="font-semibold">Convert to PNG</span>.</li>
-            <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">3.</span> Download PNG files instantly.</li>
-          </ol>
-          <div class="mt-5 rounded-2xl border border-blue-100 bg-blue-50 p-4">
-            <p class="text-sm font-semibold text-[#0066ff]">Why this tool?</p>
-            <p class="mt-1 text-sm text-slate-700">No ads, no signup, no upload to server. All conversion is done in your browser.</p>
-          </div>
-
-          <!-- AdSense 300x600 -->
-          <!-- Free version: ad placeholder disabled
-          <div class="mt-4 mx-auto flex h-[600px] w-full max-w-[300px] items-center justify-center rounded-[20px] border-2 border-dashed border-slate-300 bg-slate-50 text-center">
-            <div>
-              <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Ad Placeholder</p>
-              <p class="text-base font-semibold text-slate-600">300 x 600</p>
-            </div>
-          </div>
-          -->
-        </aside>
-      </div>
-
-      <section id="how-to-use" class="mt-6 rounded-[20px] border border-slate-100 bg-white p-5 shadow-card sm:p-8">
-        <h2 class="text-2xl font-bold text-slate-900">How to Convert JPG to PNG Online</h2>
-        <p class="mt-3 text-sm leading-7 text-slate-600">
-          This free JPG to PNG converter helps you turn JPG or JPEG images into transparent-friendly PNG format quickly.
-          Your files never leave your device because conversion happens with the Canvas API directly in the browser.
-          It is a fast, secure, and simple way to convert images for websites, design, social media, and documents.
-        </p>
-        <div class="mt-5 grid gap-4 sm:grid-cols-3">
-          <article class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
-            <h3 class="text-sm font-semibold text-slate-900">Step 1: Upload</h3>
-            <p class="mt-2 text-sm text-slate-600">Drag files into the upload area or click to select JPG/JPEG images.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
-            <h3 class="text-sm font-semibold text-slate-900">Step 2: Convert</h3>
-            <p class="mt-2 text-sm text-slate-600">Press Convert to PNG. The tool processes each file locally in your browser.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-100 bg-slate-50 p-4">
-            <h3 class="text-sm font-semibold text-slate-900">Step 3: Download</h3>
-            <p class="mt-2 text-sm text-slate-600">Use Download PNG to save all converted files, or download per image.</p>
-          </article>
+    <main class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_320px]">
+      <section class="tool-shell rounded-[24px] border border-slate-100 bg-white p-5 sm:p-7">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h2 class="text-2xl font-bold text-slate-900">All Image Tools</h2>
+          <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#0066ff]">10 Tools</span>
+        </div>
+        <div class="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <a href="./tools/jpg-to-png/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">JPG to PNG</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert JPG and JPEG files into PNG format.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/png-to-jpg/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">PNG to JPG</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert PNG images to lightweight JPG.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/jpg-to-webp/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">JPG to WebP</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert JPG images to optimized WebP format.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/png-to-webp/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">PNG to WebP</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert PNG files to WebP in-browser.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/webp-to-jpg/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">WebP to JPG</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert WebP images to JPG format quickly.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/webp-to-png/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">WebP to PNG</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Convert WebP to lossless PNG files.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/compress/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">Image Compressor</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Reduce image file size with quality control.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/resize/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">Image Resizer</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Set custom width and height for any image.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/crop/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">Image Cropper</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Visually select and crop an image area.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
+          <a href="./tools/image-to-pdf/" class="group rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg">
+            <h3 class="text-lg font-bold text-slate-900">Image to PDF</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Merge multiple images into one PDF document.</p>
+            <p class="mt-4 text-sm font-semibold text-[#0066ff] group-hover:underline">Open Tool</p>
+          </a>
         </div>
       </section>
 
-      <section id="faq" class="mt-6 rounded-[20px] border border-slate-100 bg-white p-5 shadow-card sm:p-8">
-        <h2 class="text-2xl font-bold text-slate-900">JPG to PNG Converter FAQ</h2>
-        <div class="mt-4 space-y-3">
-          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <summary class="cursor-pointer list-none text-sm font-semibold text-slate-900">Is this JPG to PNG converter really free?</summary>
-            <p class="mt-2 text-sm text-slate-600">Yes. This image converter is fully free to use with no account required.</p>
-          </details>
-          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <summary class="cursor-pointer list-none text-sm font-semibold text-slate-900">Do you upload my images to a server?</summary>
-            <p class="mt-2 text-sm text-slate-600">No. All JPG to PNG conversion is 100% client-side in your browser.</p>
-          </details>
-          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <summary class="cursor-pointer list-none text-sm font-semibold text-slate-900">Can I convert multiple JPG files at once?</summary>
-            <p class="mt-2 text-sm text-slate-600">Yes. Multi-file upload is supported with preview cards and quick downloads.</p>
-          </details>
-          <details class="group rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <summary class="cursor-pointer list-none text-sm font-semibold text-slate-900">I typed "jpg contertor" in search. Is this the right tool?</summary>
-            <p class="mt-2 text-sm text-slate-600">Yes. If you need a JPG converter to create PNG files, this is the correct tool.</p>
-          </details>
+      <aside class="tool-shell rounded-[24px] border border-slate-100 bg-white p-5 sm:p-6">
+        <h2 class="text-lg font-bold text-slate-900">How It Works</h2>
+        <ol class="mt-4 space-y-3 text-sm text-slate-600">
+          <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">1.</span> Open any tool from the grid.</li>
+          <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">2.</span> Upload image files by drag and drop or file picker.</li>
+          <li class="rounded-xl border border-slate-100 bg-slate-50 p-3"><span class="font-semibold text-slate-900">3.</span> Process files client-side and download output instantly.</li>
+        </ol>
+
+        <!-- AdSense 300x600 -->
+        <div class="ad-box mt-5 mx-auto flex h-[600px] w-full max-w-[300px] items-center justify-center text-center">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Ad Placeholder</p>
+            <p class="text-sm font-semibold text-slate-600">300 x 600</p>
+          </div>
         </div>
-      </section>
+      </aside>
     </main>
 
-    <footer class="pb-6 sm:pb-8">
+    <footer class="mt-6 rounded-[24px] border border-slate-100 bg-white p-5">
       <!-- AdSense Footer 728x90 -->
-      <!-- Free version: ad placeholder disabled
-      <div class="mx-auto flex h-[90px] w-full max-w-[728px] items-center justify-center rounded-[20px] border-2 border-dashed border-slate-300 bg-white shadow-card">
-        <div class="text-center">
+      <div class="ad-box mx-auto flex h-[90px] w-full max-w-[728px] items-center justify-center text-center">
+        <div>
           <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Ad Placeholder</p>
           <p class="text-sm font-semibold text-slate-600">728 x 90</p>
         </div>
       </div>
-      -->
-      <div class="mt-3 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-500">
-        <a href="./privacy-policy.html" class="transition-colors hover:text-[#0066ff]">Privacy Policy</a>
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-500">
+        <a href="./privacy-policy.html" class="hover:text-[#0066ff]">Privacy Policy</a>
         <span class="text-slate-300">|</span>
-        <a href="./terms.html" class="transition-colors hover:text-[#0066ff]">Terms</a>
+        <a href="./terms.html" class="hover:text-[#0066ff]">Terms</a>
       </div>
     </footer>
   </div>
-
-  <script src="./js/converter.js"></script>
 </body>
 </html>
